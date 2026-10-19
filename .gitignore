@@ -1,0 +1,24 @@
+
+# Virtual environment (recreate it with: pip install -r requirements.txt)
+venv/
+.venv/
+env/
+ 
+# Python caches
+__pycache__/
+*.pyc
+ 
+# Logs and local backups
+*.log
+*_backup.joblib
+ 
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ 
+# Streamlit secrets (never commit these)
+.streamlit/secrets.toml
+ 
+Claude finished the response

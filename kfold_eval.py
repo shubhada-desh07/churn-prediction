@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from xgboost import XGBClassifier
 
 SEED, K = 42, 5
-df = pd.read_csv("telco.csv")
+df = pd.read_csv("telco_from_xlsx.csv")
 df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce")
 df = df.dropna().drop(columns="customerID")
 y = (df["Churn"] == "Yes").astype(int).values
